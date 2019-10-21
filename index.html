@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+	<title>Vip Tip</title>
+	<meta name="description" content="Vip-Tip - Kalkulator napiwków" />
+	<meta name="keywords" content="tip calculator, kalkulator napiwków, vip tip" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,firefox=1" />
+	<meta name="author" content="Dorota Kargul" />
+	
+	<link href="style.css" rel="stylesheet" /> 
+	
+	<!--[if lt IE 9]>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js></script>
+	<![endif]-->
+	
+</head>
+
+<body>
+
+	<main>
+		
+		<h1>vip<span style="color:#eda678">-</span>tip</h1>
+		<div id="gap"></div>
+		<form>
+			<p>Wartość rachunku:</p>
+			zł <input id="amount" type="text" placeholder="wpisz wartość rachunku">
+			<p>Zadowolenie z obsługi:</p>
+			<select id="quality">
+				<option disabled selected value="0">-- wybierz --</option>
+				<option value="0.2">20% - Bierz moje pieniądze!</option>
+				<option value="0.15">15% - Żyj długo i pomyślnie.</option>
+				<option value="0.1">10% - Więcej nauczyć musisz się...</option>
+				<option value="0.05">5% - Skrócić o głowę!</option>
+			</select>
+			<p>Ilość osób:</p>
+			<input id="people" type="text" placeholder="wpisz ilość osób do podziału">
+			<button type="button" id="calculate">Oblicz</button>
+		</form>
+		
+		<div id="tip">
+			zł <p id="sum">0.00</p>
+			<small id="person">od osoby</small>
+		</div>
+	
+	</main>
+	
+	<script src="javascript.js"></script>
+
+</body>
+
+</html>
